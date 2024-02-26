@@ -79,7 +79,7 @@ L=\lim_{x \to \infty} \frac {\log (1-k \cdot n_A \cdot \frac {\tau} {x})} {\frac
 \end{align}
 where $x$ is a large continous variable. This limit can be calculated by applying L'Hopital's Rule, i.e.
 \begin {align}
-L=\lim_{x \to \infty} \frac { k \cdot n_A \cdot \frac {\tau} {x^2}} {\frac {-1} {(x-1)^2}} = -k \cdot n_A \cdot  \tau
+L=\lim_{x \to \infty} \frac { \frac {k \cdot n_A \cdot \frac {\tau} {x^2}}{1-k \cdot n_A \cdot \frac {\tau} {x}}} {\frac {-1} {(x-1)^2}} = -k \cdot n_A \cdot  \tau
 \label{eq:lim4}
 \end{align}
 Therefore, $\lim_{N \to \infty} (1-k \cdot n_A \cdot \frac {\tau} {N})^{N-1} = e^L$=$e^{-k \cdot n_A \cdot \tau}$. The value in Eq. \ref{eq:prob3} is the probability of the system transition in the time interval $[t+(N-1) \cdot \frac \tau N,t+\tau]$. If we divide it by $\frac\tau N$, we get the probability the density of probability of the transition happening within $\frac \tau N$ from time $t+\tau$, i.e.:
